@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 // const heading = React.createElement(
 //     "h1", 
 //     {id:"heading",'data-cy':"h1_heading" }, 
@@ -27,16 +30,16 @@ const parent = React.createElement(
   [  React.createElement(
     "div", {id:"child"},
    [ React.createElement(
-        "h1", {}, "I am an h1 element") , 
+        "h1", {}, "This is Jayesh  ") , 
     React.createElement(
-            "h2", {}, "I am an h2 element"),
+            "h2", {}, "Working on React 🧑‍💻"),
         ]),
         React.createElement(
             "div", {id:"child2"},
            [ React.createElement(
-                "h1", {}, "I am an h1 element") , 
+                "h1", {}, "There is a child2") , 
             React.createElement(
-                    "h2", {}, "I am an h2 element"),
+                    "h2", {}, "Child element has h2 tag"),
                 ])]
 );
 
