@@ -20,17 +20,39 @@
    ReactElement(object) -> ReactElement(object) -> ReactElement(object)
 
 */
-
+// hard coded
+// JSX using
 const parent = React.createElement(
     "div", {id:"parent"}, 
+  [  React.createElement(
+    "div", {id:"child"},
+   [ React.createElement(
+        "h1", {}, "I am an h1 element") , 
     React.createElement(
-        "div", {id:"child"},
-       [ React.createElement(
-            "h1", {}, "I am an h1 element") , 
+            "h2", {}, "I am an h2 element"),
+        ]),
         React.createElement(
-                "h2", {}, "I am an h2 element")]
-            
-));
+            "div", {id:"child2"},
+           [ React.createElement(
+                "h1", {}, "I am an h1 element") , 
+            React.createElement(
+                    "h2", {}, "I am an h2 element"),
+                ])]
+);
+
+// JSX
+// const parent = (
+//     <div id="parent">
+//         <div id="child">
+//             <h1 id="heading">Hello Jayesh from React</h1>
+
+//         </div>
+//     </div>
+// );
+
+
 console.log(parent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(parent); // render the parent in the root element
+
+
