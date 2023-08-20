@@ -1,0 +1,23 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "This is learning react series",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayeshd7/ReactInternal.git"
+  },
+  "keywords": [],
+  "author": "Jayesh Dalal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayeshd7/ReactInternal/issues"
+  },
+  "homepage": "https://github.com/jayeshd7/ReactInternal#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}

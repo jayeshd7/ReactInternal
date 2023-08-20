@@ -5,3 +5,4 @@
 2. Github - https://github.com/namastedev/namaste-react
 3. Discord - https://discord.com/channels/1057696352890519662/1060238868756037632/threads/1140880978752065637
 4. How React internal works - https://www.youtube.com/watch?v=7YhdqIR2Yzo
+5. Bundler - https://www.showwcase.com/show/26900/what-is-a-bundler
