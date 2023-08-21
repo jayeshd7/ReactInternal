@@ -8,6 +8,7 @@
 4. How React internal works - https://www.youtube.com/watch?v=7YhdqIR2Yzo
 5. Bundler - https://www.showwcase.com/show/26900/what-is-a-bundler
 6. bundle code with parcel for production env - npx parcel build .\Inception\index.html  & remove the "main" from package.json file 
+7. Last 2 version of any browsers supported using browserslist : []
 
 ### Parcel Bundler - https://github.com/parcel-bundler/parcel
 1. run the server - npx parcel .\Inception\index.html
