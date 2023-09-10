@@ -23,3 +23,6 @@
 10. Diagnostic report - npx parcel build .\Inception\index.html --experimental-scope-hoisting --no-minify --no-source-maps --no-cache --log-level 4 --experimental-skip-optimization
 11. Parcel is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration.
 12. Host on https 
+
+
+### Lecture - 3 Foundation
