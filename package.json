@@ -23,9 +23,11 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "emoji-picker-react": "^4.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "browserslist":[
-    "last 2 chrome versions"]
+  "browserslist": [
+    "last 2 chrome versions"
+  ]
 }
