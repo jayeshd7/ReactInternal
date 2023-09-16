@@ -32,7 +32,7 @@ const parent = React.createElement(
    [ React.createElement(
         "h1", {}, "This is Jayesh  ") , 
     React.createElement(
-            "h2", {}, "Working on React 🧑‍💻"),
+            "h2", {}, "Working on React 🧑‍💻🚀 "),
         ]),
         React.createElement(
             "div", {id:"child2"},

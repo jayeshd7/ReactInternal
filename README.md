@@ -26,3 +26,8 @@
 
 
 ### Lecture - 3 Foundation
+
+1. package.json has script tag with the help of that we can run the command : npm run start , npm run build
+2. npm run start - run the server
+3. npm run build - build the code for production
+4. npm run build -- --no-minify - build the code for production without minification
