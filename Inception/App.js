@@ -49,7 +49,8 @@ const number = 10000;
 
 const HeadingComponent = () => (
     <div id="container">
-    <TitleComponent />
+        
+    {TitleComponent()}
     <h2>{number}</h2>
     {jsxHeading}
     <h1 className="heading"> Namaste React Using JSX ❤️ </h1>

@@ -35,4 +35,9 @@
 6. Babel is JS compiler which is converted JSX into react.createEkement() function
 7. Babel is a JavaScript compiler. Use next generation JavaScript, today.
 8. Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. ( support new script in old browser )
-9. 
+9. class based component: old way write code
+fucntional components: new way to write code
+alwyas it starts with capital letter
+10. component composition - combine multiple components
+11. using {} we can write JS code inside JSX
+12.  way to render react component root.render(<HeadingComponent />);
