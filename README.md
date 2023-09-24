@@ -31,3 +31,13 @@
 2. npm run start - run the server
 3. npm run build - build the code for production
 4. npm run build -- --no-minify - build the code for production without minification
+5. JSX make our developer life easy , JSX is not a requirement for using React. Using React without JSX is especially convenient when you don't want to set up compilation in your build environment.
+6. Babel is JS compiler which is converted JSX into react.createEkement() function
+7. Babel is a JavaScript compiler. Use next generation JavaScript, today.
+8. Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. ( support new script in old browser )
+9. class based component: old way write code
+fucntional components: new way to write code
+alwyas it starts with capital letter
+10. component composition - combine multiple components
+11. using {} we can write JS code inside JSX
+12.  way to render react component root.render(<HeadingComponent />);
