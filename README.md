@@ -41,3 +41,5 @@ alwyas it starts with capital letter
 10. component composition - combine multiple components
 11. using {} we can write JS code inside JSX
 12.  way to render react component root.render(<HeadingComponent />);
+
+### Lecture - 4
