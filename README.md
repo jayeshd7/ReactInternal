@@ -11,6 +11,7 @@
 7. Last 2 version of any browsers supported using browserslist : []
 
 ### Parcel Bundler - https://github.com/parcel-bundler/parcel
+[Lecture-2-github-branch](https://github.com/jayeshd7/ReactInternal/tree/main)
 1. run the server - npx parcel .\Inception\index.html
 2. HMR - hot module replacement
 3. File watching algorithm - written in c++
@@ -26,7 +27,7 @@
 
 
 ### Lecture - 3 Foundation
-
+[Lecture-3-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_3_laying_foundation)
 1. package.json has script tag with the help of that we can run the command : npm run start , npm run build
 2. npm run start - run the server
 3. npm run build - build the code for production
@@ -43,6 +44,7 @@ alwyas it starts with capital letter
 12.  way to render react component root.render(<HeadingComponent />);
 
 ### Lecture - 4
+[Lecture-4-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_4)
 1. props - props are immutable ( can not be changed )
 2. props are used to pass data from parent/child to child/parent component (argument to the function)
 3. config driven UI - we can pass the data from outside of the component
@@ -58,6 +60,7 @@ alwyas it starts with capital letter
 
 
 ### Lecture - 5
+[Lecture-5-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_5)
 1. folder/file structure : https://legacy.reactjs.org/docs/faq-structure.html
 2. export default - export the component as a default
 3. export - export the component as a named export
