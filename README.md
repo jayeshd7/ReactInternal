@@ -41,3 +41,17 @@ alwyas it starts with capital letter
 10. component composition - combine multiple components
 11. using {} we can write JS code inside JSX
 12.  way to render react component root.render(<HeadingComponent />);
+
+### Lecture - 4
+1. props - props are immutable ( can not be changed )
+2. props are used to pass data from parent/child to child/parent component (argument to the function)
+3. config driven UI - we can pass the data from outside of the component
+4. with map function we can iterate the array and return the JSX
+```
+{restObj.map((restaurantData) => (
+    <RestaurantCard key={restaurantData.data.id} restData={restaurantData} />
+))}
+
+```
+5. key is used to identify the component uniquely
+6. Index as a key is an anti-pattern - https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318
