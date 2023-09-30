@@ -1,67 +1,90 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//const heading = React.createElement("h1", {id:"heading"}, "Namaste React 🧑‍💻");
-//console.log(heading);
 
-// JSX  - HTML like syntex for React, JSX ===> React.createElement() ==> React elements - JS objects --> DOM nodes --> Browser
-// JSX code is transpied before it is rendered in the browser & JS engine.
+const Header = () => {
+    return (
+        <div className="header">
+           <div className="logo-container">
+            <img className="logo" src = "https://i.pinimg.com/474x/b3/e5/f3/b3e5f321d4aedcf983a6c95f5a6d0b88.jpg" />
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Cart</li>
+                    <li>Contact Us</li>
+                </ul>
 
-// react element
-
-
-// react Comoonent
-/*
-class based component: old way write code
-fucntional components: new way to write code
-alwyas it starts with capital letter
-const fn = () => true;
-below both code are same - this is way to return
-const HeadingComponent = () => {
-    return <h1 className="heading"> Namaste React Using JSX🧑‍💻 </h1>;
+                </div>
+        </div>
+    )
 }
 
-const HeadingComponent = () => (
-     <h1 className="heading"> Namaste React Using JSX🧑‍💻 </h1>
-);
-*/
-const spanElement = (
-    <span> This is span element </span>
-  
-  );
-  
+const restObj = [
+    {       
+           type:"veg",
+           data:{
+            id:1,
+            restName:"Bhavi Foods",
+            cuisine:["Indian Foods","Veg Foods"],
+            rating:"5 star",
+            deliveryTime:"30 minuate",
+            specialMenu:["Paneer", "paratha", "Dal Makhani", "Rice", "Rajma"]
+           }
+    },
+   
+    {
+            type:"non-veg",
+            data:{
+            id:2,
+            restName:"KFC",
+            cuisine:["Fast Foods", "chicken"],
+            rating:"4 star",
+            deliveryTime:"30 minuate",
+            specialMenu:["burger", "coldDrink", "chicken", "fries"]
+            }
+    }
+];
 
-const jsxHeading = (
-<h1 className="heading" tabIndex="5"> 
-{spanElement} 
-Namaste React Using JSX🧑‍💻 
-</h1>
-);
-
-const TitleComponent = () => (
-    <div id="container">
-    <h1 className="heading"> Title is React 👌 </h1>
-    </div>
-);
-const number = 10000;
-// component composition - combine multiple components
-// using {} we can write JS code inside JSX
-
-const HeadingComponent = () => (
-    <div id="container">
+const RestaurantCard = (props) => {
+    const {restData} = props;
+    const {restName,cuisine,rating,deliveryTime,specialMenu} = restData?.data;
+    return (
+        <div className="restaurant-card" style={{backgroundColor:"#f0f0f0"}}>
+            <img alt= "rest-logo"className="restaurant-image" src="https://images.rawpixel.com/image_png_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbGlmZW9mcGl4MDAwMDEtaW1hZ2VfMS1renhsdXd3ci5wbmc.png" />
+            <h3>{restName}</h3>
+            <h3>{cuisine.join(',')}</h3>
+            <h3>{rating}</h3>
+            <h3>{deliveryTime}</h3>
+            <h3>{specialMenu.join(',')}</h3>
         
-    {TitleComponent()}
-    <h2>{number}</h2>
-    {jsxHeading}
-    <h1 className="heading"> Namaste React Using JSX ❤️ </h1>
-    </div>
-);
+           </div>
+    )
+}
+const Body = () => {
+    return (
+        <div className="body">
+            <div className="search">Search</div>
+            <div className="restaurant-container">
+                {restObj.map((restaurantData) => (
+                    <RestaurantCard key={restaurantData.data.id} restData={restaurantData} />
+                ))}
+            </div>
+        </div>
+    );
+};
 
+const AppLayout = () => {
+    return (
+        <div className="app">
+           {Header()}
+           {Body()}
 
+        </div>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// way to render react element
-// root.render(jsxHeading);
 
-// way to render react component
-root.render(<HeadingComponent />);
+root.render(<AppLayout />);
