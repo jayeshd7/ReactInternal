@@ -79,6 +79,7 @@ whenever state varibale changes react re-render the component.
 
 10. React fiber : https://github.com/acdlite/react-fiber-architecture
 
-
+### Lecture - 6
+[Lecture-6-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_6)
 
 
