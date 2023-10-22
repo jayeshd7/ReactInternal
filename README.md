@@ -65,6 +65,19 @@ alwyas it starts with capital letter
 2. export default - export the component as a default
 3. export - export the component as a named export
 4. import - import the component
+5. create super power component using hooks
+6. Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+7. useState - useState is a Hook that allows you to have state variables in functional components. You pass the initial state to this function and it returns a variable with the current state value (not necessarily the initial state) and another function to update this value.
+```
+const [listOfRestaurants, setListOfRestaurants] = useState(restObj);
+```
+whenever state varibale changes react re-render the component.
+
+8. useEffect - The Effect Hook lets you perform side effects in function components: useEffect is a React hook that triggers a side effect when a dependency changes. It is a close replacement for componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+9. virtual DOM - it is not actual DOM , it is a representation of actual DOM.
+
+10. React fiber : https://github.com/acdlite/react-fiber-architecture
 
 
 
