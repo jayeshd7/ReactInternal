@@ -90,3 +90,5 @@ whenever state varibale changes react re-render the component.
  const [isLoggedin, setIsLoggedin] = useState(true);
  onClick={() => setIsLoggedin(false)}
 ```
+
+[Lecture-7-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_7)
