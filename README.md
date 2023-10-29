@@ -82,4 +82,10 @@ whenever state varibale changes react re-render the component.
 ### Lecture - 6
 [Lecture-6-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_6)
 
+1. Monolithic architecture - https://www.youtube.com/watch?v=5NOI3y6Z0rk
 
+2. load the page --> render --> api call ---> rerender the page
+
+3. useEffect called after the render and after the DOM has been updated with the changes.
+
+4. 
