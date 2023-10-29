@@ -26,6 +26,7 @@
 
 
 ### Lecture - 3 Foundation
+[Lecture-3-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_3_laying_foundation)
 
 1. package.json has script tag with the help of that we can run the command : npm run start , npm run build
 2. npm run start - run the server
@@ -43,6 +44,7 @@ alwyas it starts with capital letter
 12.  way to render react component root.render(<HeadingComponent />);
 
 ### Lecture - 4
+[Lecture-4-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_4)
 1. props - props are immutable ( can not be changed )
 2. props are used to pass data from parent/child to child/parent component (argument to the function)
 3. config driven UI - we can pass the data from outside of the component
@@ -76,6 +78,7 @@ whenever state varibale changes react re-render the component.
 
 10. React fiber : https://github.com/acdlite/react-fiber-architecture
 
+### Lecture - 6
 [Lecture-6-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_6)
 
 1. Monolithic architecture - https://www.youtube.com/watch?v=5NOI3y6Z0rk
@@ -90,5 +93,5 @@ whenever state varibale changes react re-render the component.
  const [isLoggedin, setIsLoggedin] = useState(true);
  onClick={() => setIsLoggedin(false)}
 ```
-
+### Lecture - 7
 [Lecture-7-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_7)
