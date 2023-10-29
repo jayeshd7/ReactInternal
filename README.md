@@ -88,4 +88,11 @@ whenever state varibale changes react re-render the component.
 
 3. useEffect called after the render and after the DOM has been updated with the changes.
 
-4. 
+4. usestate change the header.
+
+```
+ const [isLoggedin, setIsLoggedin] = useState(true);
+ onClick={() => setIsLoggedin(false)}
+```
+
+5. 
