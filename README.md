@@ -75,3 +75,18 @@ whenever state varibale changes react re-render the component.
 9. virtual DOM - it is not actual DOM , it is a representation of actual DOM.
 
 10. React fiber : https://github.com/acdlite/react-fiber-architecture
+
+[Lecture-6-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_6)
+
+1. Monolithic architecture - https://www.youtube.com/watch?v=5NOI3y6Z0rk
+
+2. load the page --> render --> api call ---> rerender the page
+
+3. useEffect called after the render and after the DOM has been updated with the changes.
+
+4. usestate change the header.
+
+```
+ const [isLoggedin, setIsLoggedin] = useState(true);
+ onClick={() => setIsLoggedin(false)}
+```
