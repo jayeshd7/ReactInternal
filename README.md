@@ -26,7 +26,7 @@
 12. Host on https 
 
 
-### Lecture - 3 Foundation
+ ### Lecture - 3 Foundation
 [Lecture-3-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_3_laying_foundation)
 1. package.json has script tag with the help of that we can run the command : npm run start , npm run build
 2. npm run start - run the server
@@ -95,4 +95,7 @@ whenever state varibale changes react re-render the component.
  onClick={() => setIsLoggedin(false)}
 ```
 
-5. 
+### Lecture - 7
+[Lecture-7-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_7)
+
+1. UseEffect - https://reactjs.org/docs/hooks-effect.html
