@@ -99,3 +99,29 @@ whenever state varibale changes react re-render the component.
 [Lecture-7-github-branch](https://github.com/jayeshd7/ReactInternal/tree/lecture_7)
 
 1. UseEffect - https://reactjs.org/docs/hooks-effect.html
+2. If there is no dependency array, then the callback function inside useEffect will run every time the component renders.
+3. If there is an empty dependency array, then the callback function inside useEffect will only run once, similar to componentDidMount.
+4. If there are variables inside the dependency array, then the callback function inside useEffect will only run when any of the variables in the dependency array changes.
+5. useState - always define in the top of the component & inside the function.
+6. useEffect - always define in the top of the component & inside the function.
+7. Never create useState inside the if & else condition.
+9. Routing - https://reactrouter.com/web/guides/quick-start
+10. useRouteError - https://reactrouter.com/web/api/Hooks/userouteerror
+```
+import { useRouteError } from "react-router-dom";
+
+const Error = () => {
+    const err = useRouteError();
+    console.log(err);
+    return (
+        <div>
+            <h2>oops !! Some thing went wrong </h2>
+            <h3>{err.status}:{err.statusText}</h3>
+           
+        </div>
+    );
+};
+export default Error;
+```
+
+

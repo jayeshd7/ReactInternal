@@ -1,11 +1,18 @@
 // ## Namaste React Course by Akshay Saini
-// # Chapter 06 - Exploring the world
+// # Chapter 07 - Finding the Path
 
-import Body from "./components/Body";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"; // for routing our page import createBrowserRouter and RouterProvider for providing router & Outlet for children component for nested roCuting
+
+import About from "./Components/About";
+import Body from "./Components/Body";
+import Contact from "./Components/Contact";
+import Error from "./Components/Error";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import Login from "./Components/Login";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import RestaurantMenu from "./Components/RestaurantMenu";
 
 /* My Food App structure will look like this, 
             1) Header
@@ -25,16 +32,48 @@ import ReactDOM from "react-dom/client";
        
 */
 
-// AppLayout component to render: Header, Body and Footer Component
+// AppLayout component to render: Header, Outlet(it contain children component like body, About, Restaurant Menu etc) and Footer Component
 const AppLayout = () => {
   return (
     <React.Fragment>
       <Header />
-      <Body />
+      <Outlet />
       <Footer />
     </React.Fragment>
   );
 };
 
+// call createBrowserRouter for routing different pages
+const appRouter = createBrowserRouter([
+  {
+    path: "/", // show path for routing
+    element: <AppLayout />, // show component for particular path
+    errorElement: <Error />, // show error component for path is different
+    children: [
+      // show children component for routing
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/restaurant/:resId",
+        element: <RestaurantMenu />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      
+      },
+    ],
+  }
+]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter} />); // render RouterProvider and use router as props and pass value appRouter

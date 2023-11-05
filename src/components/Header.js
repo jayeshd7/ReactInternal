@@ -1,4 +1,6 @@
 import FoodFireLogo from "../Images/Food Fire Logo.png";
+import { Link } from "react-router-dom"; // imported Link for client side routing
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 // Title component for display logo
@@ -8,7 +10,7 @@ const Title = () => (
       className="logo"
       src={FoodFireLogo}
       alt="Food Fire Logo"
-      title="Food Fire"
+      title="Food Fire Logo"
     />
   </a>
 );
@@ -17,15 +19,22 @@ const Title = () => (
 const Header = () => {
   // use useState for user logged in or logged out
   const [isLoggedin, setIsLoggedin] = useState(true);
-
+  const navigate = useNavigate();
   return (
     <div className="header">
       <Title />
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
           <li>
             <i className="fa-solid fa-cart-shopping"></i>
           </li>
@@ -39,7 +48,7 @@ const Header = () => {
                 Logout
               </button>
             ) : (
-              <button className="login-btn" onClick={() => setIsLoggedin(true)}>
+              <button className="login-btn" onClick={() => navigate("/login")}>
                 Login
               </button>
             )}
